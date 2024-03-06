@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/andfunyangon/static/css/main.9a1102b1.css",
-    "main.js": "/andfunyangon/static/js/main.9ec3b94b.js",
+    "main.js": "/andfunyangon/static/js/main.85ce7b4f.js",
     "static/media/image-sample.jpg": "/andfunyangon/static/media/image-sample.8bdea140987c8b3ba753.jpg",
     "static/media/logo.png": "/andfunyangon/static/media/logo.2215bbc7900aa26a2187.png",
     "static/media/video-editing.png": "/andfunyangon/static/media/video-editing.7e24858b8809c86253ba.png",
@@ -9,10 +9,10 @@
     "static/media/photoshop.png": "/andfunyangon/static/media/photoshop.cfac8a8c81c2b37b9ca3.png",
     "index.html": "/andfunyangon/index.html",
     "main.9a1102b1.css.map": "/andfunyangon/static/css/main.9a1102b1.css.map",
-    "main.9ec3b94b.js.map": "/andfunyangon/static/js/main.9ec3b94b.js.map"
+    "main.85ce7b4f.js.map": "/andfunyangon/static/js/main.85ce7b4f.js.map"
   },
   "entrypoints": [
     "static/css/main.9a1102b1.css",
-    "static/js/main.9ec3b94b.js"
+    "static/js/main.85ce7b4f.js"
   ]
 }
