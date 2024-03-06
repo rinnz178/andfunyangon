@@ -1,0 +1,54 @@
+.clock {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border: 8px solid #333;
+  border-radius: 50%;
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transition: all 0.05s;
+}
+
+.second-hand {
+  background-color: #ff4f1f;
+  animation: rotateSecondHand 60s linear infinite;
+}
+
+@keyframes rotateSecondHand {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(450deg);
+  }
+}
+
+.min-hand {
+  background-color: #333;
+}
+
+.hour-hand {
+  background-color: #333;
+}
+
+.hour-marker {
+  width: 4px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 2px); /* Center horizontally */
+  transform-origin: bottom center;
+  transform: translateY(-100%);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+}

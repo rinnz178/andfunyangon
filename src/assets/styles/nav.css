@@ -1,0 +1,27 @@
+/* Ensure your CSS classes are properly defined and applied */
+.nav-link {
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out;
+  }
+  
+  .nav-link:hover::after {
+    background-color: #e32a29; 
+    color:#e32a29;
+  }
+  
+  /* styles.css */
+
+.custom-toggle .navbar-toggler-icon {
+  /* Your custom styles here */
+  background-color: red;
+}

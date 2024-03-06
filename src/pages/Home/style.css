@@ -1,0 +1,80 @@
+/* styles.css */
+@keyframes gradientText {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+.rainbow-text {
+  background: linear-gradient(90deg,#8c0000, #e32a29, #C4C8CB,#ffffff);
+  background-size: 300% 300%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientText 8s ease infinite;
+}
+
+.job_card{
+  background: linear-gradient(90deg,#ffffff96,#ffffff27,#0303280d);
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+    .heading {
+      font-size: 37px;
+    }
+    .body_text{
+        font-size: 10px;
+    }
+    .home_banner_content{
+      margin-top: 7%;
+      height: 81vh;
+    }
+    .home_gallery_header{
+      font-size: 24px;
+      font-weight: bold;
+      color: #C4C8CB;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .heading {
+      font-size: 32px;
+    }
+  }
+  
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .heading {
+      font-size: 40px;
+    }
+    
+  }
+  
+  @media screen and (min-width: 1281px) {
+    .heading {
+      font-size: 55px;
+    }
+    .home_banner_content{
+        margin-top: 7%;
+        height: 77vh;
+    }
+    .home_heading_text{
+        margin-top: 40px;
+    }
+    .home_gallery_header{
+      font-size: 32px;
+      font-weight: bold;
+      color: #C4C8CB;
+      margin-bottom: 50px;
+    }
+    .our_services_card{
+      background-color: #C4C8CB;
+      box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.48)
+    }
+  }
+  
