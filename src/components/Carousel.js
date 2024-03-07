@@ -5,6 +5,8 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards,Autoplay } from 'swiper/modules';
 import '../assets/styles/Carousel.css'; // Import CSS for styling
+import  Image  from 'react-bootstrap/Image';
+import ImageSample from '../assets/images/image-sample.jpg';
 
 
 const ImageCarousel = () => {
@@ -22,9 +24,15 @@ const ImageCarousel = () => {
         }}
 
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>
+          <Image style={{height:"100%"}} src={ImageSample}/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image style={{height:"100%"}} src={ImageSample}/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image style={{height:"100%"}} src={ImageSample}/>
+        </SwiperSlide>
       </Swiper>
    </>
   );

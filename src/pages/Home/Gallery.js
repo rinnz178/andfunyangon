@@ -13,7 +13,7 @@ const Gallery = () => {
     const scrollRef = useRef(null)
     const { ref, inView } = useInView({
         triggerOnce: true, // This will trigger the animation only once
-        threshold: 0.6, // This specifies the percentage of the element's visibility needed to trigger the animation
+        threshold: 1, // This specifies the percentage of the element's visibility needed to trigger the animation
     });
   return (
     <Container style={{marginTop:'40px'}} className="col-md-11 col-sm-11 py-1">

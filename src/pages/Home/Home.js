@@ -14,6 +14,7 @@ import Gallery from './Gallery';
 import JobList from './JobList';
 import Clock from './Clock';
 import OurServices from './OurServices';
+import HomeFeedback from './HomeFeedback';
 
 const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -96,6 +97,9 @@ const Home = () => {
         <OurServices/>
         <Gallery/>
         <JobList/>
+        <HomeFeedback/>
+        <JobList/>
+
              
       <FloatButton icon={<QuestionCircleOutlined />} style={{right: 24,height:'50px',width:'50px',bottom:'110px'}}/>
       <FloatButton.BackTop 

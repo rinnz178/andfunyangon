@@ -1,15 +1,16 @@
 import React from 'react'
 import { Row, Col } from "react-bootstrap";
-import { Text } from '@chakra-ui/react';
+import { Text, Button } from '@chakra-ui/react';
 import { Center } from '@chakra-ui/react';
 import ImageSample from '../../assets/images/image-sample.jpg';
 import { Grid, GridItem } from '@chakra-ui/react'
 import { motion } from "framer-motion";
 import  Container  from 'react-bootstrap/Container';
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
-import { Button } from '@chakra-ui/react';
 import SeeMore from '../../assets/icons/right-arrow.png';
 import Image  from 'react-bootstrap/Image';
+import CustomButton from '../../components/CustomButton';
+import { CaretRightOutlined } from '@ant-design/icons';
 
 const JobList = () => {
   return (
@@ -22,8 +23,7 @@ const JobList = () => {
             <Grid 
                 templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }} 
                 gap={{ base: 2, md: 5 }}
-                >
-                
+                >             
                 <GridItem>
                     <Card className="job_card" style={{backgroundColor:'transparent',color:'#C4C8CB',height:'15.7vh'}}>
                         <CardBody>
@@ -199,6 +199,21 @@ const JobList = () => {
                 
             </Grid>
         </Row>
+        <div style={{display:'flex',justifyContent:'center',marginTop:'20px'}}>                                    
+            <Button 
+                style={{
+                        borderRadius:'30px',
+                        backgroundColor:'#e32a29',
+                        color:'white',
+                        width:'112px',
+                        fontSize:'14px',
+
+                        }} 
+                rightIcon={<CaretRightOutlined />}
+                >
+                See More
+            </Button>
+        </div>    
         
     </Container>
   )
