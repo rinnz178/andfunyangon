@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 768px) {
   .swiper {
-    width: 70%;
+    width: 80%;
     height: 280px;
   }
 
@@ -24,7 +24,7 @@
     font-size: 18px; /* Adjust font size for mobile */
   }
 }
-
+/* 
 .swiper-slide:nth-child(1n) {
   background-color: rgb(206, 17, 17);
 }
@@ -63,4 +63,4 @@
 
 .swiper-slide:nth-child(10n) {
   background-color: rgb(54, 94, 77);
-}
+} */

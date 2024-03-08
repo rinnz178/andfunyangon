@@ -10,11 +10,7 @@ import  Container  from 'react-bootstrap/Container';
 import { useInView } from 'react-intersection-observer';
 
 const Gallery = () => {
-    const scrollRef = useRef(null)
-    const { ref, inView } = useInView({
-        triggerOnce: true, // This will trigger the animation only once
-        threshold: 1, // This specifies the percentage of the element's visibility needed to trigger the animation
-    });
+    
   return (
     <Container style={{marginTop:'40px'}} className="col-md-11 col-sm-11 py-1">
         <Center>
@@ -27,13 +23,12 @@ const Gallery = () => {
                 gap={{ base: 2, md: 5 }}
                 >
                 <motion.div
-                    ref={ref}
                     initial={{ opacity: 0, scale: 0.5 }}
-                    animate={inView ? { opacity: 1, scale: 1 } : {}}
+                    animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                        duration: 0.8,
-                        delay: 0.,
-                        ease: [0, 0.9, 0.9, 1.01]
+                      duration: 0.8,
+                      delay: 0.5,
+                      ease: [0, 0.71, 0.2, 1.01]
                     }}
                     >
                     <GridItem>
@@ -45,13 +40,12 @@ const Gallery = () => {
                     </GridItem>
                 </motion.div>
                 <motion.div
-                    ref={ref}
                     initial={{ opacity: 0, scale: 0.5 }}
-                    animate={inView ? { opacity: 1, scale: 1 } : {}}
+                    animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                        duration: 0.8,
-                        delay: 0.,
-                        ease: [0, 0.9, 0.9, 1.01]
+                      duration: 0.8,
+                      delay: 0.5,
+                      ease: [0, 0.71, 0.2, 1.01]
                     }}
                     >
                     <GridItem>
@@ -63,13 +57,12 @@ const Gallery = () => {
                     </GridItem>
                 </motion.div>
                 <motion.div
-                    ref={ref}
                     initial={{ opacity: 0, scale: 0.5 }}
-                    animate={inView ? { opacity: 1, scale: 1 } : {}}
+                    animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                        duration: 0.8,
-                        delay: 0.,
-                        ease: [0, 0.9, 0.9, 1.01]
+                      duration: 0.8,
+                      delay: 0.5,
+                      ease: [0, 0.71, 0.2, 1.01]
                     }}
                     >
                     <GridItem>
@@ -81,13 +74,12 @@ const Gallery = () => {
                     </GridItem>
                 </motion.div>
                 <motion.div
-                    ref={ref}
                     initial={{ opacity: 0, scale: 0.5 }}
-                    animate={inView ? { opacity: 1, scale: 1 } : {}}
+                    animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                        duration: 0.8,
-                        delay: 0.,
-                        ease: [0, 0.9, 0.9, 1.01]
+                      duration: 0.8,
+                      delay: 0.5,
+                      ease: [0, 0.71, 0.2, 1.01]
                     }}
                     >
                     <GridItem>
@@ -99,13 +91,12 @@ const Gallery = () => {
                     </GridItem>
                 </motion.div>
                 <motion.div
-                    ref={ref}
                     initial={{ opacity: 0, scale: 0.5 }}
-                    animate={inView ? { opacity: 1, scale: 1 } : {}}
+                    animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                        duration: 0.8,
-                        delay: 0.,
-                        ease: [0, 0.9, 0.9, 1.01]
+                      duration: 0.8,
+                      delay: 0.5,
+                      ease: [0, 0.71, 0.2, 1.01]
                     }}
                     >
                     <GridItem>
@@ -117,13 +108,12 @@ const Gallery = () => {
                     </GridItem>
                 </motion.div>
                 <motion.div
-                    ref={ref}
                     initial={{ opacity: 0, scale: 0.5 }}
-                    animate={inView ? { opacity: 1, scale: 1 } : {}}
+                    animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                        duration: 0.8,
-                        delay: 0.,
-                        ease: [0, 0.9, 0.9, 1.01]
+                      duration: 0.8,
+                      delay: 0.5,
+                      ease: [0, 0.71, 0.2, 1.01]
                     }}
                     >
                     <GridItem>
@@ -133,7 +123,8 @@ const Gallery = () => {
                             style={{ borderRadius: '10px', marginBottom: '0' }}
                         />
                     </GridItem>
-                </motion.div>               
+                </motion.div>
+                              
             </Grid>
         </Row>
         

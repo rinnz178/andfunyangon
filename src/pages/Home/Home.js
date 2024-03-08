@@ -98,15 +98,12 @@ const Home = () => {
         <Gallery/>
         <JobList/>
         <HomeFeedback/>
-        <JobList/>
-
-             
-      <FloatButton icon={<QuestionCircleOutlined />} style={{right: 24,height:'50px',width:'50px',bottom:'110px'}}/>
-      <FloatButton.BackTop 
-        type='danger'
-        icon={<CaretUpOutlined fontSize="80px"/>} 
-        style={{right: 24,height:'50px',width:'50px',backgroundColor:'#e32a29',color:'white'}} 
-        />
+          <FloatButton icon={<QuestionCircleOutlined />} style={{right: 24,height:'50px',width:'50px',bottom:'110px'}}/>
+          <FloatButton.BackTop 
+            type='danger'
+            icon={<CaretUpOutlined fontSize="80px"/>} 
+            style={{right: 24,height:'50px',width:'50px',backgroundColor:'#e32a29',color:'white'}} 
+            />
 
 
     </Container>

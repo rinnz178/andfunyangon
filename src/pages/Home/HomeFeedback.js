@@ -23,19 +23,21 @@ function HomeFeedback() {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "190px",
-    slidesToShow: 2.21,
+    centerPadding: "187px",
+    slidesToShow: 2.23,
     speed: 500,
     autoplay: true,
+    focusOnSelect: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 480,
         settings: {
-          centerPadding: "50px",
+          centerPadding: "37px",
           slidesToShow: 1,
-
+          initialSlide: 1,
         }
-      }
+      }, 
+      
     ]
   };
 
@@ -49,29 +51,28 @@ function HomeFeedback() {
         {rawData.map(item => (
           <div key={item.id} class="mb-5 mt-5">
             <div className="center-slide mt-1">
-              <Card style={{borderWidth:'1px', borderColor:'white'}}>
+              <Card style={{borderWidth:'1px', borderColor:'#C4C8CB',backgroundColor:'#C4C8CB'}}>
                 <div style={{marginTop:'40px'}}>
                     <Center>
                         <Image src={item.logo} style={{width:'60px',position:'absolute',marginTop:'40px'}}/>
                     </Center>
                     <div className="feedback-card" style={{backgroundColor:'transparent',marginTop:'30px',borderRadius:'30px 30px 5px 5px',color:'white'}}>
-                        <Col>
+                        <Col >
                             <Row>
                                 <Center style={{marginTop:'20px',fontWeight:'bold'}}>    
                                     <Text>{item.name}</Text>
                                 </Center>
                             </Row>
-                            <Row style={{padding:'0px 20px 20px'}}>
-                                <Image src={RightQuote} style={{width:'55px'}}/>
+                            <Row style={{padding:'10px 20px 17px 20px'}}>
+                                <Image src={RightQuote} style={{width:'45px'}}/>
                             </Row>
                             <Row style={{padding:'0px 30px 0px 30px'}}>
-                                <p style={{fontSize:'10px'}}>
-                                    {item.description}
-                                </p>
-                           </Row>
-                           <Row style={{display:'flex', justifyContent:'end',padding:'0px 30px 0px 0px'}}>
-                                <Image src={LeftQuote} style={{width:'55px'}}/>
+                                <p style={{fontSize:'11px'}}>{item.description}</p>
+                                <Row style={{display:'flex', justifyContent:'end',padding:'0px 0px 20px 0px',}}>
+                                  <Image src={LeftQuote} style={{width:'45px'}}/>
+                                </Row>
                             </Row>
+                            
                           
                         </Col>
                         

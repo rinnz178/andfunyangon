@@ -22,6 +22,7 @@
 .job_card{
   background: linear-gradient(90deg,#ffffff96,#ffffff27,#0303280d);
   color: #ffffff;
+  padding-top: 17px;
 }
 .feedback-card{
   background: linear-gradient(90deg, #171740 0%, #030326 44%, #010101 100%);
@@ -31,14 +32,14 @@
 
 @media screen and (max-width: 768px) {
     .heading {
-      font-size: 37px;
+      font-size: 30px;
     }
     .body_text{
         font-size: 10px;
     }
     .home_banner_content{
       margin-top: 7%;
-      height: 81vh;
+      height: 75vh;
     }
     .home_gallery_header{
       font-size: 24px;
@@ -47,13 +48,13 @@
       margin-bottom: 30px;
     }
     .center-slide {
-      transform: scale(0.9); /* Default scale for non-center slides */
+      transform: scale(0.8); /* Default scale for non-center slides */
       transition: transform 0.5s; /* Add smooth transition */
       opacity: 0.5;
       /* height: 400px; */
       /* padding-top: 80px; */
       /* padding-bottom: 80px; */
-      /* width:250px; */
+      width:200px;
     }
     
     .slick-center .center-slide {
@@ -61,7 +62,7 @@
       position: relative;
       z-index: 1;
       opacity: 1;
-      /* width:250px; */
+      width:200px;
     
     
     }
@@ -70,6 +71,20 @@
       font-weight: bold;
       color: #C4C8CB;
       margin-bottom: 20px;
+    }
+
+    .our_services_card{
+      background-color: #C4C8CB;
+      box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.48);
+      padding-top: 20px;
+    }
+    .service_text{
+      font-size: 12px;
+      padding: 5px;
+
+    }
+    .job_seemore_icon{
+      width: 30px;
     }
   }
   
@@ -105,7 +120,8 @@
     }
     .our_services_card{
       background-color: #C4C8CB;
-      box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.48)
+      box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.48);
+      padding-top: 25px;
     }
     .center-slide {
       transform: scale(1); /* Default scale for non-center slides */
@@ -118,7 +134,7 @@
     }
     
     .slick-center .center-slide {
-      transform: scale(1.8); 
+      transform: scale(1.5); 
       position: relative;
       z-index: 1;
       opacity: 1;
@@ -128,7 +144,11 @@
       font-size: 32px;
       font-weight: bold;
       color: #C4C8CB;
-      margin-bottom: 30px;
+      margin-bottom: 0px;
+    }
+    .service_text{
+      font-size: 15px;
+      padding: 5px;
     }
   }
   

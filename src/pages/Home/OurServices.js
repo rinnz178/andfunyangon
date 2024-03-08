@@ -33,23 +33,23 @@ const OurServices = () => {
   const isMobile = window.innerWidth <= 768; 
 
   const imageSize = isMobile ? '50px' : '57px';
-  const textSize = isMobile ? '12px' : '15px';
+  const textSize = isMobile ? '11px' : '15px';
 
 
     const renderGridItems = () => {
         return data.map(item => (
           <GridItem key={item.id}>
-            <Card className="our_services_card" style={{ backgroundColor: '#C4C8CB', color: '#030328', height: '13.7vh' }}>
-              <CardBody style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', fontWeight: 'bold', marginTop: '6px' }}>
+            <Card className="our_services_card" style={{ backgroundColor: '#C4C8CB', color: '#030328'}}>
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', fontWeight: 'bold',  }}>
                 <Col>
                   <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Image src={item.imageSrc} style={{ width: imageSize }} />
                   </Row>
-                  <Text style={{ marginTop: '5px', fontSize: textSize }}>
+                  <Text className="service_text">
                     {item.text}
                   </Text>
                 </Col>
-              </CardBody>
+              </div>
             </Card>
           </GridItem>
         ));
