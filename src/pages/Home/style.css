@@ -54,7 +54,11 @@
       /* height: 400px; */
       /* padding-top: 80px; */
       /* padding-bottom: 80px; */
-      width:200px;
+      /* width:200px; */
+      /* display: no; */
+    }
+    .home_fb{
+      display: none;
     }
     
     .slick-center .center-slide {

@@ -17,16 +17,14 @@ const NavMenu = () => {
   return (
     <>
       {["md"].map((expand) => (
-        <Navbar key={expand} expand={expand} className="mb-3 bg-body-dark" data-bs-theme="dark" style={{backgroundColor: 'rgba(12, 2, 57, 0.2)',backdropFilter: 'blur(5px)' }}>
-          <Container className="py-1 col-md-10 col-sm-11" style={{ maxWidth: '100%' }}>
+        <Navbar key={expand} expand={expand} className="mb-3 bg-body-dark " data-bs-theme="dark" style={{backgroundColor: 'rgba(12, 2, 57, 0.2)'}}>
+          <Container className="col-md-10 col-sm-10 py-2  " >
             <Navbar.Brand href="#">
               <Image src={Logo} rounded style={{maxWidth:"130px"}}/>
             </Navbar.Brand>
             <Navbar.Toggle
-              // aria-controls={`offcanvasNavbar-expand-${expand}`}
-            >
-              ----
-            </Navbar.Toggle>
+              aria-controls={`offcanvasNavbar-expand-${expand}`}
+            />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}

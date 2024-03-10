@@ -1,6 +1,6 @@
 .swiper {
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
 }
 
 .swiper-slide {
@@ -15,8 +15,9 @@
 
 @media screen and (max-width: 768px) {
   .swiper {
-    width: 80%;
+    width: 280px;
     height: 280px;
+    /* position: absolute; */
   }
 
   .swiper-slide {

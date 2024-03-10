@@ -36,7 +36,7 @@ const Home = () => {
   };
 
   return (
-    <Container  container style={{ height: '300vh', padding: 10 }}>
+    <Container  style={{ height: '300vh', padding: 10 }}>
         <Row className="home_banner_content" >
           <Col xs={12} sm={12} md={{ order: "last" }} lg>
             <motion.div
@@ -97,13 +97,13 @@ const Home = () => {
         <OurServices/>
         <Gallery/>
         <JobList/>
-        <HomeFeedback/>
-          <FloatButton icon={<QuestionCircleOutlined />} style={{right: 24,height:'50px',width:'50px',bottom:'110px'}}/>
+          <FloatButton icon={<QuestionCircleOutlined />} style={{height:'50px',width:'50px',bottom:'110px'}}/>
           <FloatButton.BackTop 
             type='danger'
             icon={<CaretUpOutlined fontSize="80px"/>} 
-            style={{right: 24,height:'50px',width:'50px',backgroundColor:'#e32a29',color:'white'}} 
+            style={{height:'50px',width:'50px',backgroundColor:'#e32a29',color:'white'}} 
             />
+        {/* <HomeFeedback/> */}
 
 
     </Container>

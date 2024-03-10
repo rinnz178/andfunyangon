@@ -32,9 +32,9 @@ function HomeFeedback() {
       {
         breakpoint: 480,
         settings: {
+          className: "center",
           centerPadding: "37px",
           slidesToShow: 1,
-          initialSlide: 1,
         }
       }, 
       
@@ -42,11 +42,11 @@ function HomeFeedback() {
   };
 
   return (
-    <Container className="container  mb-4 p-5" >
+    <div className="container  mb-4 p-5" >
     <Center>
         <Text className="home_feedback_header">Our Clients Feedback</Text>
     </Center>
-    <div className="slider-container">
+    <div className="slider-container pc_feedback">
       <Slider {...settings}>
         {rawData.map(item => (
           <div key={item.id} class="mb-5 mt-5">
@@ -89,7 +89,7 @@ function HomeFeedback() {
             
       </Slider>
     </div>
-    </Container>
+    </div>
   );
 }
 
